@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Override styles for swipe list components */
+
+/* Styles for leading actions in swipeable list items */
+.swipeable-list-item__leading-actions,
+.swipeable-list-item__trailing-actions {
+    /* Apply common text styles */
+    @apply text-white text-lg uppercase font-bold;
+}
+
+/* Background color for leading actions */
+.swipeable-list-item__leading-actions {
+    @apply bg-blue-600;
+}
+
+/* Background color for trailing actions */
+.swipeable-list-item__trailing-actions {
+    @apply bg-pink-600;
+}
+
+/* Styles for swipe action container */
+.swipeable-list .swipe-action {
+    @apply flex justify-center items-center;
+}
